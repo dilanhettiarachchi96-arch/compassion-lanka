@@ -1,13 +1,7 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { formatCurrency } from '@/lib/format';
 import { mockDonors } from '@/lib/mock-data';
-
-interface Donor {
-  name: string;
-  amount: number;
-  date: string;
-  anonymous: boolean;
-}
+import type { Donor } from '@/types';
 
 interface DonorListProps {
   donors?: Donor[];

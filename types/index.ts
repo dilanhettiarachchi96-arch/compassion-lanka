@@ -3,6 +3,13 @@ export type ShipmentStatus = 'registered' | 'in_transit' | 'received' | 'distrib
 export type PaymentMethod = 'card' | 'payhere' | 'bank_transfer';
 export type DonationStatus = 'pending' | 'completed' | 'failed';
 
+export interface Donor {
+  name: string;
+  amount: number;
+  date: string;
+  anonymous: boolean;
+}
+
 export interface Campaign {
   id: string;
   slug: string;
